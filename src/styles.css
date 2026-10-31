@@ -1,0 +1,81 @@
+.lp-network {
+  --lp-network-accent: #2563eb;
+  --lp-network-border: #b8c2d0;
+  color: #172033;
+  background: #fff;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+  padding: 1rem;
+  border: 1px solid var(--lp-network-border);
+  border-radius: 0.5rem;
+}
+.lp-network input {
+  display: block;
+  padding: 0.5rem;
+  max-width: 100%;
+}
+.lp-network-scroll {
+  overflow: auto;
+}
+.lp-network table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.lp-network td,
+.lp-network th {
+  border-bottom: 1px solid var(--lp-network-border);
+  padding: 0.5rem;
+}
+.lp-network button {
+  color: inherit;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+.lp-network button:disabled {
+  cursor: default;
+}
+.lp-network :focus-visible {
+  outline: 2px solid var(--lp-network-accent);
+  outline-offset: 3px;
+}
+.lp-network tr[data-selected='true'] {
+  background: #eff6ff;
+}
+.lp-network-track {
+  width: 10rem;
+  background: #e2e8f0;
+  height: 0.75rem;
+}
+.lp-network-track span {
+  display: block;
+  min-width: 2px;
+  height: 100%;
+  background: var(--lp-network-accent);
+}
+.lp-network pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 24rem;
+  overflow: auto;
+  background: #f1f5f9;
+  padding: 0.75rem;
+}
+.lp-network-headers div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.lp-network-headers dt {
+  font-weight: 600;
+}
+.lp-network-headers dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.lp-network-detail h3 {
+  overflow-wrap: anywhere;
+}
